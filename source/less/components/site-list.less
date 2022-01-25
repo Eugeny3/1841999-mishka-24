@@ -1,8 +1,35 @@
 .site-list {
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    position: absolute;
+    top: 89px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+  }
+}
+
+.site-list__item {
+  display: flex;
+  align-items: center;
+  height: 79px;
+  padding: 0 30px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 #ececec,
+    inset 0 1px 0 #ececec;
+
+  @media (min-width: @tablet-width) {
+    box-shadow: none;
+    background-color: transparent;
+  }
 }
 
 .site-list__link {
   text-decoration: none;
   color: #000000;
+  padding-left: 46px;
 }

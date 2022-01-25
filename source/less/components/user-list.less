@@ -1,8 +1,47 @@
 .user-list {
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.user-list__item {
+  display: flex;
+  align-items: center;
+  height: 79px;
+  padding: 0 30px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 #ececec,
+    inset 0 1px 0 #ececec;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
 }
 
 .user-list__link {
+  position: absolute;
+  padding-left: 46px;
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    padding: 0;
+  }
+}
+
+.user-list__search-icon,
+.user-list__cart-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+  }
 }
