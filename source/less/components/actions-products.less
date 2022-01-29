@@ -3,56 +3,53 @@
   padding: 0 30px;
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
     margin-bottom: 56px;
     padding: 0 50px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 0 50px;
-    margin: 0 auto;
-    max-width: 1150px;
-  }
-}
-
-.actions-products__wrapper {
-  @media (min-width: @tablet-width) {
     display: grid;
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    max-width: 668px;
     gap: 0 42px;
-    grid-template-columns: 292px 334px;
     grid-template-areas:
-      "up mid"
-      "down mid";
-    justify-content: space-between;
+      "up up"
+      "middle image"
+      "down image";
   }
 
   @media (min-width: @desktop-width) {
-    gap: 0 58px;
-    grid-template-columns: 467px 525px;
+    max-width: 1050px;
+    grid-template-areas:
+      "up image"
+      "middle image"
+      "down image";
   }
 }
 
 .actions-products__top-container {
+  grid-area: up;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
     justify-content: flex-start;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    z-index: 2;
   }
 }
 
 .actions-products__container {
   @media (min-width: @tablet-width) {
-    grid-area: up;
+    grid-area: middle;
     display: flex;
     flex-direction: column;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 153px;
     padding-left: 175px;
   }
 }
@@ -62,6 +59,9 @@
     grid-area: down;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -74,9 +74,8 @@
   justify-content: center;
 
   @media (min-width: @tablet-width) {
-    grid-area: mid;
-    display: flex;
-    flex-direction: column;
+    grid-area: image;
+    margin-left: auto;
     width: 334px;
     height: 404px;
   }
@@ -84,6 +83,7 @@
   @media (min-width: @desktop-width) {
     width: 525px;
     height: 636px;
+    z-index: 1;
   }
 }
 
@@ -111,6 +111,11 @@
   line-height: 30px;
   color: #000000;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 
   @media (min-width: @desktop-width) {
     order: 2;

@@ -9,6 +9,12 @@
     display: flex;
     justify-content: space-between;
     padding: 51px 50px 58px 50px;
+    margin: 0 auto;
+    max-width: 668px;
+
+    @media (min-width: @desktop-width) {
+      max-width: 1050px;
+    }
   }
 }
 
@@ -17,5 +23,6 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    align-items: center;
   }
 }
