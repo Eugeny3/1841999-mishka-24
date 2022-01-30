@@ -1,0 +1,31 @@
+.page-header {
+  position: relative;
+  align-items: center;
+  height: 79px;
+  max-width: 1150px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    display: block;
+    height: 88px;
+  }
+}
+
+.page-header__logo {
+  min-height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    grid-area: logo;
+    justify-content: flex-start;
+    min-height: 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-end;
+    margin-right: 124px;
+  }
+}

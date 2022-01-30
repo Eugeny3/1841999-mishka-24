@@ -1,0 +1,24 @@
+.map {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-area: right;
+    margin-bottom: 0;
+  }
+}
+
+.map__item {
+  width: 100%;
+  height: 455px;
+
+  @media (min-width: @tablet-width) {
+    height: 457px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 527px;
+    height: 457px;
+  }
+}
