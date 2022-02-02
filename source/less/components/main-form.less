@@ -7,6 +7,53 @@
   color: #000000;
   background-color: #f1f1f1;
   min-height: 176px;
+  margin: 0;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 43px;
+    line-height: 50px;
+    min-height: 226px;
+    margin-bottom: 55px;
+    padding-top: 11px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 24px;
+      bottom: 0;
+      left: 0;
+      background-image: url("/img/zigzag-fill-tablet.svg");
+      background-repeat: repeat-x;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    min-height: 236px;
+    margin-bottom: 99px;
+    padding-bottom: 14px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 24px;
+      bottom: 0;
+      left: 0;
+      background-image: url("/img/zigzag-2-fill-desktop.svg");
+      background-repeat: repeat-x;
+      width: 100%;
+      z-index: 1;
+    }
+  }
 }
 
 .main-form__title-text {
@@ -16,25 +63,118 @@
   font-size: 13px;
   line-height: 24px;
   color: #444444;
+  max-width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    max-width: 668px;
+    padding: 0 50px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 11px 225px;
+    max-width: 702px;
+    margin-bottom: 51px;
+  }
 }
 
-.main-form__name {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
-  color: #63d1bb;
-  text-transform: uppercase;
+.main-form__wrapper {
+  padding: 0 30px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  max-width: 260px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+    padding: 0;
+    max-width: none;
+  }
 }
 
-.main-form__text {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
-  color: #000000;
+.main-form__container--type {
+  margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.main-form__container--colors {
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+    background-color: #f1f1f1;
+    padding: 50px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 47px;
+  }
+}
+
+.main-form__container--full {
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.main-form__container--contacts {
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+    background-color: #f1f1f1;
+    padding: 50px 0;
+  }
+}
+
+.main-form__container--contacts fieldset {
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.main-form__container--contacts fieldset:last-of-type {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.main-form__container--text fieldset {
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 43px;
+  }
+}
+
+.main-form__container--button {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    max-width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1050px;
+  }
 }
 
 .main-form__text-bottom {
@@ -44,14 +184,50 @@
   font-size: 14px;
   line-height: 16px;
   color: #444444;
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 0;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 176px;
+  }
 }
 
 .main-form__group {
   border: none;
-}
-
-.main-form__list {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    max-width: 668px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1050px;
+  }
+}
+
+.main-form__button {
+  width: 260px;
+  height: 52px;
+  padding: 0;
+  font-size: 17px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    width: 230px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 175px;
+  }
 }
