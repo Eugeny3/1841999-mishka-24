@@ -1,8 +1,12 @@
 .copyright {
-  min-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 22px 0 23px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__text {
@@ -13,4 +17,8 @@
   line-height: 18px;
   color: #000000;
   margin-right: 27px;
+}
+
+.copyright__link {
+  height: 34px;
 }

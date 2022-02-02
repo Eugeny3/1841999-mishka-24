@@ -3,6 +3,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    z-index: 1;
   }
 }
 
@@ -26,8 +27,20 @@
 
   @media (min-width: @desktop-width) {
     font-size: 17px;
-    margin-right: 20px;
+    margin-right: 53px;
   }
+}
+
+.site-list__item:nth-child(1) {
+  @media (min-width: @desktop-width) {
+    margin-right: 34px;
+    padding-right: 17px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.site-list__item:nth-child(2) {
+  margin-left: 1px;
 }
 
 .site-list__link {
