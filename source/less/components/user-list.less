@@ -34,12 +34,6 @@
   }
 }
 
-.user-list__item--basket {
-  @media (min-width: @tablet-width) {
-    min-height: 25px;
-  }
-}
-
 .user-list__link {
   position: absolute;
   padding-left: 46px;
@@ -49,11 +43,15 @@
   @media (min-width: @tablet-width) {
     position: static;
     padding: 0;
-    padding-top: 8px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 12px;
+    padding: 0;
+  }
+}
+
+.user-list__link--cart-icon {
+  @media (min-width: @desktop-width) {
     padding-right: 2px;
   }
 }
@@ -80,8 +78,7 @@
   left: 2px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 5px;
-    margin-left: 1px;
+    margin-top: 8px;
   }
 }
 
@@ -90,6 +87,7 @@
 
   @media (min-width: @tablet-width) {
     margin-right: 26px;
+    margin-top: 6px;
   }
 }
 
