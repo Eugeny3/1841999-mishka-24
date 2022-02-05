@@ -13,6 +13,15 @@
   padding: 17px;
   margin-top: 17px;
 
+  &:focus-visible {
+    outline: none;
+    border: 2px solid #62d1ba;
+  }
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
   @media (min-width: @tablet-width) {
     margin: 0;
     width: 500px;
@@ -26,4 +35,8 @@
 
 .field-text-add::placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.field-text-add::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
 }

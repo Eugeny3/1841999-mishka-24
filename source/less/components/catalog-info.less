@@ -29,6 +29,14 @@
   border: 1px solid #ececec;
   padding-bottom: 33px;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -160,21 +168,48 @@
 
 .catalog-info__video-button {
   position: absolute;
-  top: 37px;
-  left: 80px;
+  top: 24%;
+  left: 31%;
+  width: 101px;
+  height: 77px;
   border: none;
   background-color: transparent;
   padding: 0;
   cursor: pointer;
 
+  &:hover {
+    transform: translate(-50%, -47%) scale(1.2);
+    top: 47%;
+    left: 50%;
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+    top: 50%;
+    left: 50%;
+  }
+
   @media (min-width: @tablet-width) {
-    top: 186px;
-    left: 283px;
+    top: 41%;
+    left: 43%;
+
+    &:hover {
+      top: 50%;
+      left: 50%;
+    }
+
+    &:active {
+      top: 50%;
+      left: 50%;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    top: 193px;
-    left: 295px;
+    &:hover {
+      top: 49%;
+      left: 50%;
+    }
   }
 }
 
