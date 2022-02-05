@@ -17,18 +17,11 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 50px;
-    max-width: 768px;
+    max-width: 668px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 1050px;
-    display: grid;
-    grid-template-columns: 683px 289px;
-    grid-template-rows: 172px 283px;
-    gap: 0 79px;
-    grid-template-areas:
-      "video-c title-c"
-      "video-c text-c";
   }
 }
 
@@ -51,11 +44,12 @@
     grid-template-areas:
       "video-c title-c"
       "video-c text-c";
+    padding: 0;
   }
 }
 
 .catalog-info__title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -114,7 +108,7 @@
 }
 
 .catalog-info__text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
