@@ -52,6 +52,10 @@
   height: auto;
 }
 
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
 .main-nav--closed .main-nav__toggle::before {
   position: absolute;
   content: "";
@@ -121,14 +125,6 @@
   width: 86px;
   height: 35px;
 
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: @tablet-width) {
     width: 113px;
     height: 46px;
@@ -137,6 +133,16 @@
   @media (min-width: @desktop-width) {
     width: 149px;
     height: 72px;
+  }
+}
+
+.main-nav__logo-image[href] {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
