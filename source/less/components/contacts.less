@@ -173,8 +173,19 @@
 .contacts__link {
   text-decoration: none;
   color: #444444;
-  border-bottom: 1px solid rgba(98, 209, 186, 1);
+  border-bottom: 1px solid #62d1ba;
   height: 26px;
+
+  &:hover {
+    color: #46c1ae;
+    border-bottom: 1px solid #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    border-bottom: none;
+    margin-bottom: 1px;
+  }
 
   @media (min-width: @tablet-width) {
     height: 29px;

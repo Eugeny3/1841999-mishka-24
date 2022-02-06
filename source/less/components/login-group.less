@@ -30,106 +30,32 @@
 
 .login-group__name--tel {
   cursor: pointer;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 34px;
-    left: 228px;
-    width: 22px;
-    height: 23px;
-    background-image: url("/img/phone-icon.svg");
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 10px;
-    left: 60px;
-    width: 200px;
-    height: 1px;
-    background-color: #62d1ba;
-  }
 
   @media (min-width: @tablet-width) {
     margin-top: 15px;
     margin-right: 118px;
-
-    &::after {
-      top: -4px;
-      left: 617px;
-    }
-
-    &::before {
-      display: none;
-    }
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 16px;
     margin-left: 61px;
     margin-right: 82px;
-
-    &::after {
-      top: -5px;
-      left: 781px;
-    }
   }
 }
 
 .login-group__name--email {
   cursor: pointer;
-  position: relative;
   background-color: transparent;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 38px;
-    left: 225px;
-    width: 32px;
-    height: 21px;
-    background-image: url("/img/mail-icon.svg");
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 10px;
-    left: 78px;
-    width: 182px;
-    height: 1px;
-    background-color: #62d1ba;
-  }
 
   @media (min-width: @tablet-width) {
     margin-top: 17px;
     margin-right: 93px;
-
-    &::after {
-      top: -1px;
-      left: 614px;
-    }
-
-    &::before {
-      display: none;
-    }
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 16px;
     margin-left: 61px;
     margin-right: 56px;
-
-    &::after {
-      top: 0;
-      left: 778px;
-    }
   }
 }
 

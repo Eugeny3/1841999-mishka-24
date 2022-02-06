@@ -16,6 +16,14 @@
   content: "";
   top: 0;
   left: 0;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .control__mark--radio {
@@ -54,6 +62,12 @@
 
 .control__input[type="radio"]:checked + .control__mark--radio::before {
   display: block;
+}
+
+.control__input:focus-visible ~ .control__mark,
+.control__input:focus-visible ~ .control__label {
+  color: #62d1ba;
+  border-color: #62d1ba;
 }
 
 .control__mark--checkbox {
