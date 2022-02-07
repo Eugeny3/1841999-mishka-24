@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="js/script.min.js" as="script">
+    <link rel="preload" href="img/background-desktop@2x.jpg" as="image">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"><!-- 180×180 -->
@@ -74,7 +78,7 @@
         <div class="categories__wrapper">
           <header class="categories__header">
             <div class="categories__image-container">
-              <h2 class="categories__title">Милые штуки <br> ручной<br>работы для дома</h2>
+              <h2 class="categories__title">Милые штуки<br>ручной<br>работы для дома</h2>
             </div>
             <ul class="categories__list">
               <li class="categories__item">
@@ -99,7 +103,7 @@
             <h3 class="actions-products__title">Вязаные корзинки</h3>
           </div>
           <div class="actions-products__text-container">
-            <p class="actions-products__text">Товар <br>недели</p>
+            <p class="actions-products__text">Товар&nbsp<br>недели</p>
           </div>
           <div class="actions-products__container">
             <p class="actions-products__description">Экологически чистая пряжа,
@@ -348,5 +352,6 @@
         </form>
       </div>
     </section>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
