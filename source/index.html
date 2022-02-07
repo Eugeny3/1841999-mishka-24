@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"><!-- 180×180 -->
@@ -74,7 +74,7 @@
         <div class="categories__wrapper">
           <header class="categories__header">
             <div class="categories__image-container">
-              <h2 class="categories__title">Милые штуки <br> ручной<br>работы для дома</h2>
+              <h2 class="categories__title">Милые штуки<br>ручной<br>работы для дома</h2>
             </div>
             <ul class="categories__list">
               <li class="categories__item">
@@ -99,7 +99,7 @@
             <h3 class="actions-products__title">Вязаные корзинки</h3>
           </div>
           <div class="actions-products__text-container">
-            <p class="actions-products__text">Товар <br>недели</p>
+            <p class="actions-products__text">Товар&nbsp<br>недели</p>
           </div>
           <div class="actions-products__container">
             <p class="actions-products__description">Экологически чистая пряжа,
@@ -348,21 +348,6 @@
         </form>
       </div>
     </section>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--open');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--open');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
